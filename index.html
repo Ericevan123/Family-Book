@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P.78</title>
+    </head>
+    <body style="text-align: center;background:cyan;">
+        <br>
+        <h1 style="font-family: Comic sans ms;font-size: 30px;color: darkblue;">My Family Book</h1>
+        <hr>
+        <br>
+        <br>
+        <img id="img" src="download.jpg" width="380px" height="400px">
+        <br>
+        <br>
+        <h2 id="name" style="font-size: 18px;font-family: monospace;">-By Eric</h2>
+        <br>
+        <br>
+        <button id="next" style="width: 110px;height: 40px;font-size: 15px;background-color: blue;
+        font-family: 'Courier New', Courier, monospace;font-size: 20px;" onclick="Next()">Next</button>
+    </body>
+    <script>
+      var Names=[
+          "Father: Evan George",
+          "Mother: Neena Evan",
+          "Me: Eric Evan George",
+          "Lil' Brother: Jake Evan George",
+          "THE END!(reload page to see again)"
+      ];
+      var Images=[
+          "dad.jpg",
+          "mom.jpg",
+          "bro.jpg",
+          "lilbro.jpg",
+          "theend.png"
+      ];
+
+      var x=0;
+
+      function Next(){
+      document.getElementById("img").src =Images[x];
+
+      document.getElementById("name").innerHTML =Names[x];
+
+      x++;
+      };
+
+    </script>
+</html>
